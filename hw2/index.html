@@ -218,6 +218,27 @@
 			every mesh element, we can perform the edge flip operation by reassigning what each mesh element's member variables 
 			point to. We used a combination of individual assignment and the setNeighbors helperfunction to do so.
 		</p>
+		<p>Here is the edge flip in action.</p>
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<table style="width: 100%; text-align: center; border-collapse: collapse;">
+
+
+			  <tr>
+				<td style="text-align: center;">
+				  <img src="images/task4teapotbefore.png" width="400px"/>
+				  <figcaption>Teapot mesh with no edge flips.</figcaption>
+				</td>
+				<td style="text-align: center;">
+				  <img src="images/task4teapotafter.png" width="400px"/>
+				  <figcaption>Teapot mesh with some edge flips.</figcaption>
+				</td>
+			  </tr>
+
+			  
+  
+			</table>
+		</div>
+
 		<p>
 			As a visual aid, we drew out what the edge flip operation would look like by hand and labeled every mesh element on 
 			the diagram. This allowed us to inspect how mesh elements changed with respect to their surroundings, and we found 
@@ -242,6 +263,7 @@
 			  
 			</table>
 		</div>
+		
 
 		<p>
 			At this point, the only bug we ran into saw edge flips causing portions of the mech to disappear. Since we knew that our 
